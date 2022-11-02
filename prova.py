@@ -28,3 +28,14 @@ elif n2>n1 and n2>n3:
     print(n2)
 else:
     print(n3)
+
+#Crea due vettori uno con il nome di città e uno con il nome di persone.
+#Stampa usando dei cicli for per ogni città tutti i nomi degli abitanti
+citta=["torino", "milano" ] 
+abitanti= ["gino", "lino"]
+for x in citta:
+ for y in abitanti:
+    print(x,y)
+
+
+
