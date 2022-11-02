@@ -36,6 +36,17 @@ abitanti= ["gino", "lino"]
 for x in citta:
  for y in abitanti:
     print(x,y)
+#Riempi una lista di 5 numeri. E una variabile x. 
+#Stampa solo  i numeri maggiori di x
+import random
+x=random.randrange(1,10)
+numeri=(5,10,7,0,15)
+print(x)
+for y in numeri:
+    if y>x:
+        print(y)
+    
+
 
 
 
