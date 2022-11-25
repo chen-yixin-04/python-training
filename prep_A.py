@@ -1,11 +1,5 @@
 #Chiedi all’utente di inserire 5 numeri e stampa i numeri man mano che vengono inseriti
-numero1 = input("inserisci numero1:")
-print("numero1: " + numero1)
-numero2 = input("inserisci numero2:")
-print("numero2: " + numero2)
-numero3 = input("inserisci numero3:")
-print("numero1: " + numero3)
-numero4 = input("inserisci numero4:")
-print("numero4: " + numero4)
-numero5 = input("inserisci numero5:")
-print("numero5: " + numero5)
+
+for x in range(5):
+    n=int(input("inserisci numero"+" "+str(x+1)+" : "))
+    print(n)
