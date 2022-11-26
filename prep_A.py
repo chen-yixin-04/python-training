@@ -32,16 +32,24 @@
 #Chiedi all’utente quanti numeri vuole inserire. 
 #Leggi tutti i numeri in input. Stampa tutti i numeri inseriti al quadrato
 
-lista=[]
-quadrato=[]
-y=int(input("quanti numeri vuoi inserire? "))
-for x in range(y):
-  z=int(input("inserisci numero "+str(x+1)+": "))
-  lista.append(z)
-  q=z*z
-  quadrato.append(q)
-print(lista,quadrato)
- 
+#lista=[]
+#quadrato=[]
+#y=int(input("quanti numeri vuoi inserire? "))
+#for x in range(y):
+ # z=int(input("inserisci numero "+str(x+1)+": "))
+  #lista.append(z)
+ # q=z*z
+  #quadrato.append(q)
+#print(lista,quadrato)
+
+
+def primo(n):
+  for x in range(2,n):
+    n = int(input("inserisci numero"))
+    x=primo(n)
+    check=int(n/x)
+    if check*x!=n: 
+      print("primo")
 
 
 
