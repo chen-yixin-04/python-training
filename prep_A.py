@@ -42,15 +42,23 @@
   #quadrato.append(q)
 #print(lista,quadrato)
 
+#Definisci una funzione chiamata ‘primo’ che riceva come parametro un numero intero e ritorni true in caso il numero fosse primo
+
+#def primo(n):
+  #for x in range(2,n):
+    #check=int(n/x)
+#y = int(input("inserisci numero"))
+#x=primo(y)
+#print(x)
+
 
 def primo(n):
   for x in range(2,n):
-    n = int(input("inserisci numero"))
-    x=primo(n)
     check=int(n/x)
-    if check*x!=n: 
-      print("primo")
-
+    if (check*x)!=n: return False
+  return True
+m=int(input("inserisci numero: "))
+x=primo(m)
 
 
 
