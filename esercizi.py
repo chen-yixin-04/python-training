@@ -28,6 +28,7 @@ for y in range(5):
 print(lista)
 lista.reverse()
 print(lista,count)
+print("..................................................................")
 
 #Chiedi all’utente quanti numeri vuole inserire. 
 #Leggi tutti i numeri in input. Stampa tutti i numeri inseriti al quadrato
@@ -41,16 +42,48 @@ for x in range(y):
   q=z*z
   quadrato.append(q)
 print(lista,quadrato)
+print("..................................................................")
 
-#Definisci una funzione chiamata ‘primo’ che riceva come parametro un numero intero e ritorni true in caso il numero fosse primo
+funzione = int(input("quanti numeri vuoi inserire: "))
+list = []
+for x in range(funzione):
+    y = int(input("numero da inserire: "))
+    print(pow(y,2))
+print("..................................................................")
 
+#Definisci una funzione chiamata ‘primo’ che riceva come parametro un numero intero
+# e ritorni true in caso il numero fosse primo
 
 def primo(n):
-  for x in range(2,n):
-    check=int(n/x)
-    if (check*x)!=n: return False
-  return True
-m=int(input("inserisci numero: "))
-l=primo(m)
-print(l)
+    for x in range(2,n):
+        check=int(n/x)
+        if check * x == n: return False
+    return True
+z=primo(7)
+print(z)
+print("..................................................................")
 
+#Scrivi una funzione che, data una lista di numeri in input, fornisce in output un istogramma basato su questi numeri, usando asterischi per disegnarlo.
+#Data ad esempio la lista [3, 7, 9, 5], la funzione dovrà produrre questa sequenza:
+#***
+#*******
+#*********
+#*****
+
+x = input("quanti numeri vuoi inserire? ")
+x = int(x)
+lista=[]
+for y in range(x):
+    z = int(input("inserisci numero: "))
+    lista.append(z)
+for n in lista:
+    print("*"*n)
+print(".....................................................")
+
+def funzione(n):
+ for x in range(1):
+    print("*"*n)
+funzione(3)
+funzione(7)
+funzione(9)
+funzione(5)
