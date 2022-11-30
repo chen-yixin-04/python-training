@@ -22,3 +22,10 @@ funzione(3)
 funzione(7)
 funzione(9)
 funzione(5)
+print(".....................................................")
+
+def funzione(lista):
+ for x in lista:
+    print("*"*x)
+lista=[3, 7, 9, 5]
+funzione(lista)
