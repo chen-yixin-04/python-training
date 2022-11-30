@@ -80,10 +80,43 @@ for n in lista:
     print("*"*n)
 print(".....................................................")
 
-def funzione(n):
- for x in range(1):
-    print("*"*n)
-funzione(3)
-funzione(7)
-funzione(9)
-funzione(5)
+def funzione(lista):
+ for x in lista:
+    print("*"*x)
+lista=[3, 7, 9, 5]
+funzione(lista)
+print(".....................................................")
+#Definisci una funzione che riceva in input un numero indefinito di parametri. 
+#Stampi solo il terzo e il quarto (se esistono)
+
+def funzione(lista):
+    if l>3:
+      print(lista[2],lista[3])
+    else: 
+        print("non esiste")
+lista=[]
+l=int(input("quanti numeri vuoi inserire? "))    
+for x in range (l):
+ n=int(input("inserisci numeri: "))
+ lista.append(n)
+funzione(lista)
+print(".....................................................")
+
+#Scrivi una funzione che dato in input un numero h e un carattere c stampi un albero di natale fatto di caratteri di altezza h
+#es:            *
+#              ***
+ #            *****
+#Per h = 3, e c= *
+
+def albero(h,c):
+    asterischi=1
+    spazi=h-1
+
+    for x in range(0,h):
+        print(spazi*" ", asterischi*char)
+        asterischi=asterischi +2
+        spazi=spazi -1
+
+altezza=int(input("dammi un altezza: "))
+char=input("dammi un carattere: ")
+albero(altezza,char)
